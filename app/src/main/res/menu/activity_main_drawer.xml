@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@mipmap/ic_test"
+            android:title="@string/test" />
+    </group>
+
+    <item android:title="@string/others">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_Score"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/Score" />
+                <item
+                    android:id="@+id/nav_pick"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/pick" />
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/setting" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

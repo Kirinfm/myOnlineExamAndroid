@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.onlineexam.Activity.EditStudentActivity"
+    tools:showIn="@layout/activity_edit_student">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#999"
+                android:dividerHeight="1px"></ListView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#737373" />
+
+                <TextView
+                    android:id="@+id/excellent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="优秀人数："
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/good"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="良好人数："
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+                <TextView
+                    android:id="@+id/fair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="良好人数："
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+                <TextView
+                    android:id="@+id/unfair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="良好人数："
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
